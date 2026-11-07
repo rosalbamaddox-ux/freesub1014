@@ -1,0 +1,29 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇮🇩 印尼 (Indonesia) 01 - xiaohe
+  server: free2.rajaserver2.web.id
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 4d4708ef-0729-44ac-b2b0-411ce0242e89
+  alterId: 0
+  cipher: auto
+  network: httpupgrade
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇮🇩 印尼 (Indonesia) 01 - xiaohe
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇮🇩 印尼 (Indonesia) 01 - xiaohe
+rules:
+- MATCH,PROXIES

@@ -1,0 +1,44 @@
+{
+  "log": {
+    "level": "warn"
+  },
+  "outbounds": [
+    {
+      "type": "vmess",
+      "tag": "🇮🇩 印尼 (Indonesia) 01 - xiaohe",
+      "server": "free2.rajaserver2.web.id",
+      "server_port": 80,
+      "uuid": "4d4708ef-0729-44ac-b2b0-411ce0242e89",
+      "security": "auto",
+      "transport": {
+        "type": "httpupgrade",
+        "path": "/upvmess",
+        "host": "free2.rajaserver2.web.id"
+      }
+    },
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇮🇩 印尼 (Indonesia) 01 - xiaohe"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇮🇩 印尼 (Indonesia) 01 - xiaohe"
+      ],
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

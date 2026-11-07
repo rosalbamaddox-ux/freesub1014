@@ -18,7 +18,7 @@ proxies:
   servername: gb1.japancase.site
   client-fingerprint: chrome
 - name: 🇦🇲 亚美尼亚 (Armenia) 02 - xiaohe
-  server: 157.228.71.76
+  server: it1.japancase.site
   port: 443
   udp: true
   type: vless
@@ -29,7 +29,7 @@ proxies:
     public-key: zEntiD6D81wY__YHPvIw78e09CBIgYkyQ5meIo7c_hg
     short-id: 41ae8e266bc3346f
   servername: it1.japancase.site
-  client-fingerprint: chrome
+  client-fingerprint: ''
 proxy-groups:
 - name: PROXIES
   type: select
