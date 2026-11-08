@@ -12,11 +12,7 @@
       "tls": {
         "enabled": true,
         "server_name": "orbylume.my.to",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
+        "insecure": false
       },
       "transport": {
         "type": "ws",

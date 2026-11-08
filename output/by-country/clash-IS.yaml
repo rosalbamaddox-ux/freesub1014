@@ -13,7 +13,6 @@ proxies:
   tls: true
   servername: orbylume.my.to
   skip-cert-verify: false
-  client-fingerprint: firefox
   network: ws
   ws-opts:
     path: /tvpn-tor/is
