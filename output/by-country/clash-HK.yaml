@@ -15,14 +15,6 @@ proxies:
   obfs: salamander
   obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - xiaohe
-  server: 202.146.222.174
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https%3a%2f%2ft.me%2fwangcai2
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - xiaohe
   server: 202.146.222.89
   port: 443
   udp: true
@@ -30,29 +22,37 @@ proxies:
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   sni: 202.146.222.89
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - xiaohe
-  server: 633b0024-tmm5c0-ttx5yr-1j0y6.hk3.hyhuawei.com
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 1cce7df2-251c-11ee-9409-f23c9164ca5d
-  sni: 633b0024-tmm5c0-ttx5yr-1j0y6.hk3.hyhuawei.com
-  skip-cert-verify: false
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - xiaohe
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - xiaohe
   server: 202.146.222.29
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/wangcai2üá
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - xiaohe
+  server: 112.120.123.140
+  port: 443
+  udp: true
+  type: hysteria2
+  password: a2313fba-74a6-11ed-a8bf-f23c91cfbbc9
+  sni: b3dfb3ed-tmm5c0-trg4wh-z65w.nw4.hyhuawei.com
+  skip-cert-verify: false
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - xiaohe
+  server: 202.146.222.174
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 202.146.222.174
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 06 - xiaohe
-  server: c39e9624-tmm5c0-twnp5a-ahsb.nw4.hyhuawei.com
+  server: a91af2af-tmm5c0-twnp5a-ahsb.hk3.hyhuawei.com
   port: 443
   udp: true
   type: hysteria2
   password: 2e42c1ee-aaaa-11ec-bb74-f23c9164ca5d
-  sni: c39e9624-tmm5c0-twnp5a-ahsb.nw4.hyhuawei.com
+  sni: a91af2af-tmm5c0-twnp5a-ahsb.hk3.hyhuawei.com
   skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
