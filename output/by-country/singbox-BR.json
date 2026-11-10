@@ -17,20 +17,8 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇧🇷 巴西 (Brazil) 02 - xiaohe",
-      "server": "216.238.104.154",
-      "server_port": 443,
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
-      "tls": {
-        "enabled": true,
-        "server_name": "findtemporaryworkandfreelancerprojectsonlineplatform.com",
-        "insecure": false
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇧🇷 巴西 (Brazil) 03 - xiaohe",
+      "tag": "🇧🇷 巴西 (Brazil) 02 - xiaohe",
       "server": "109.104.155.131",
       "server_port": 2053,
       "uuid": "bb3723d7-462e-442c-9472-496750476f45",
@@ -55,8 +43,7 @@
       "outbounds": [
         "auto",
         "🇧🇷 巴西 (Brazil) 01 - xiaohe",
-        "🇧🇷 巴西 (Brazil) 02 - xiaohe",
-        "🇧🇷 巴西 (Brazil) 03 - xiaohe"
+        "🇧🇷 巴西 (Brazil) 02 - xiaohe"
       ]
     },
     {
@@ -64,8 +51,7 @@
       "tag": "auto",
       "outbounds": [
         "🇧🇷 巴西 (Brazil) 01 - xiaohe",
-        "🇧🇷 巴西 (Brazil) 02 - xiaohe",
-        "🇧🇷 巴西 (Brazil) 03 - xiaohe"
+        "🇧🇷 巴西 (Brazil) 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
