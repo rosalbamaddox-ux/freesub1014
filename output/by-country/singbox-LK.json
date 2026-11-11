@@ -5,22 +5,23 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇭🇷 克罗地亚 (Croatia) 01 - xiaohe",
-      "server": "23.95.72.244",
-      "server_port": 50131,
-      "uuid": "9a5e7b1c-bf39-4b1f-891f-ac87824ee38f",
-      "flow": "xtls-rprx-vision",
+      "tag": "🇱🇰 斯里兰卡 (Sri Lanka) 01 - xiaohe",
+      "server": "170.114.46.6",
+      "server_port": 2096,
+      "uuid": "efd11a89-7506-44ce-95b6-6654859f155b",
       "tls": {
         "enabled": true,
-        "server_name": "api.adidas.com",
+        "server_name": "pcloud.z-tas.com",
+        "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "D-7bbtY-0R7n8bX_n-tMlnNPkgy1-y7zaxQvmHrcAHQ",
-          "short_id": "edcd88f8279bfd9b"
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "pcloud.z-tas.com"
         }
       }
     },
@@ -29,14 +30,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇷 克罗地亚 (Croatia) 01 - xiaohe"
+        "🇱🇰 斯里兰卡 (Sri Lanka) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇷 克罗地亚 (Croatia) 01 - xiaohe"
+        "🇱🇰 斯里兰卡 (Sri Lanka) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
