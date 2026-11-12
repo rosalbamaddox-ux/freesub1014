@@ -5,13 +5,37 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - xiaohe
+  server: 206.237.11.17
+  port: 50376
+  udp: true
+  type: vmess
+  uuid: 9091fd64-7e8e-4b7a-8ae7-84474f234926
+  alterId: 0
+  cipher: auto
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - xiaohe
   server: 213.176.92.148
   port: 40647
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: DgMywXKqojHXeuXY8hOJaYGPFcjweCIJeD5cdg/cUUY=
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - xiaohe
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - xiaohe
+  server: 202.146.222.174
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 'off'
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - xiaohe
+  server: 202.146.222.89
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 202.146.222.89
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - xiaohe
   server: 3de2432e-tmm5c0-tonrqx-1khwf.hk3.hyhuawei.com
   port: 443
   udp: true
@@ -19,16 +43,46 @@ proxies:
   password: 92bd8c68-6434-11ee-b644-f23c91cfbbc9
   sni: 3de2432e-tmm5c0-tonrqx-1khwf.hk3.hyhuawei.com
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - xiaohe
-  server: 202.146.222.174
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - xiaohe
+  server: 202.146.222.29
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 202.146.222.174
+  sni: https%253a%252f%252ft.me%252fwangcai2%25d1%2580%25d2%25b9%25d2%25af%25d1%2591%25d1%2580%25d2%25b9%25d2%25af%25d1%2596
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - xiaohe
-  server: 39.109.111.23
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - xiaohe
+  server: 88f7008b-tmm5c0-tonrqx-1khwf.nw4.hyhuawei.com
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 92bd8c68-6434-11ee-b644-f23c91cfbbc9
+  sni: 88f7008b-tmm5c0-tonrqx-1khwf.nw4.hyhuawei.com
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - xiaohe
+  server: c17b957c5a76ec76.lebufflonfermegroup.us
+  port: 40010
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: 3411b0af-589e-40f3-b8d5-d2e04ce19fa9
+- name: 🇭🇰 中国香港 (Hong Kong) 09 - xiaohe
+  server: vpn-hk-004.fastervpn.world
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vpn-hk-004.fastervpn.world
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 10 - xiaohe
+  server: c17b957c5a76ec76.lebufflonfermegroup.us
+  port: 40011
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: 3411b0af-589e-40f3-b8d5-d2e04ce19fa9
+- name: 🇭🇰 中国香港 (Hong Kong) 11 - xiaohe
+  server: 43.255.157.53
   port: 28675
   udp: true
   type: vless
@@ -40,23 +94,7 @@ proxies:
     short-id: 9a79807253c040
   servername: www.lamer.com.hk
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - xiaohe
-  server: 6d889de6-tly2o0-tn28ki-mv7m.nw4.hyhuawei.com
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 94d40708-8273-11ea-8fc9-f23c913c8d2b
-  sni: 6d889de6-tly2o0-tn28ki-mv7m.nw4.hyhuawei.com
-  skip-cert-verify: false
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - xiaohe
-  server: 202.146.222.29
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https3a2f2ft.me2fwangcai2efa3bfc3bcc3a1
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 07 - xiaohe
+- name: 🇭🇰 中国香港 (Hong Kong) 12 - xiaohe
   server: 103.172.116.201
   port: 10103
   udp: true
@@ -69,7 +107,7 @@ proxies:
     short-id: f96b3b17a0f5b1fe
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 08 - xiaohe
+- name: 🇭🇰 中国香港 (Hong Kong) 13 - xiaohe
   server: 152.32.254.68
   port: 5010
   udp: true
@@ -92,6 +130,11 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 06 - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 07 - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 08 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 09 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 10 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 11 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 12 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 13 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -105,5 +148,10 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 06 - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 07 - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 08 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 09 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 10 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 11 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 12 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 13 - xiaohe
 rules:
 - MATCH,PROXIES
