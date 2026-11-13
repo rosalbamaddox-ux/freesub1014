@@ -5,25 +5,28 @@
   "outbounds": [
     {
       "type": "vmess",
-      "tag": "🇲🇾 马来西亚 (Malaysia) 01 (家宽) - xiaohe",
-      "server": "192.228.145.118",
+      "tag": "🇨🇳 CN 01 - xiaohe",
+      "server": "39.108.113.127",
       "server_port": 10086,
-      "uuid": "b831381d-6324-4d53-ad4f-8cda48b30811",
-      "security": "auto"
+      "uuid": "74e07df3-f82a-4791-987f-247c3c395866",
+      "security": "auto",
+      "transport": {
+        "type": "ws"
+      }
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇲🇾 马来西亚 (Malaysia) 01 (家宽) - xiaohe"
+        "🇨🇳 CN 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇲🇾 马来西亚 (Malaysia) 01 (家宽) - xiaohe"
+        "🇨🇳 CN 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
