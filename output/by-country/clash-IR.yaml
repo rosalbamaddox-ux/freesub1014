@@ -5,11 +5,11 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇷 IR 01 - xiaohe
-  server: 198.16.113.219
+  server: 198.16.113.221
   port: 8443
   udp: true
   type: vless
-  uuid: e3e0e1c3-599e-4ae1-8ad4-d9e90effacc4
+  uuid: eb6fbbdd-669b-4055-9379-4eeba938578a
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
@@ -31,7 +31,7 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇮🇷 IR 03 - xiaohe
-  server: 198.16.113.218
+  server: 50.7.245.202
   port: 8443
   udp: true
   type: vless
@@ -44,7 +44,7 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇮🇷 IR 04 - xiaohe
-  server: 50.7.245.202
+  server: 198.16.113.219
   port: 8443
   udp: true
   type: vless
