@@ -5,37 +5,54 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01 - xiaohe
-  server: 168.138.205.100
+  server: 84.247.155.196
+  port: 80
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+- name: 🇯🇵 日本 (Japan) 02 - xiaohe
+  server: 168.110.21.56
+  port: 18453
+  udp: true
+  type: vless
+  uuid: 1751bebc-1bf1-420c-8b9d-97157aad179b
+- name: 🇯🇵 日本 (Japan) 03 - xiaohe
+  server: jpa.123069.xyz
   port: 53758
   udp: true
   type: ss
   cipher: aes-128-gcm
   password: Bwlqh7GcFB
-- name: 🇯🇵 日本 (Japan) 02 - xiaohe
-  server: 31.76.91.98
+- name: 🇯🇵 日本 (Japan) 04 - xiaohe
+  server: 84.247.155.196
   port: 443
   udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+- name: 🇯🇵 日本 (Japan) 05 - xiaohe
+  server: 138.3.208.26
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: 184cdec28da5a09450803c8debcd2cc9
+  sni: 138.3.208.26
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 06 - xiaohe
+  server: 103.75.118.228
+  port: 12683
+  udp: true
   type: vless
-  uuid: 7072eeba-94fd-4fb3-92f2-a4506dd84cd8
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: ejx56dFtS4LK_Th6HSLFFdm7v7zqRpv8KfjrWAw4Sjg
-    short-id: bd6f67b6b2152b45
-  servername: fuji.etherhub.cc
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 03 - xiaohe
-  server: 155.248.175.201
-  port: 23169
-  udp: true
-  type: vless
-  uuid: 3eb053cb-d6f8-4b31-8180-222e1cc6f8ff
-  flow: xtls-rprx-vision
-  tls: true
-  servername: djj.zjlo.top
-  skip-cert-verify: true
-  client-fingerprint: firefox
-- name: 🇯🇵 日本 (Japan) 04 - xiaohe
+- name: 🇯🇵 日本 (Japan) 07 - xiaohe
   server: 158.101.151.157
   port: 443
   udp: true
@@ -47,67 +64,16 @@ proxies:
     public-key: 99eQkMBHqOEKororOWKFlmH8M0o9VaVpV9w1vQIxhz8
     short-id: 684c7531e599dec0
   servername: www.microsoft.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 05 - xiaohe
-  server: 43.130.234.128
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: Yuike2026cat
-  sni: 43-130-234-128.sslip.io
-  skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 06 - xiaohe
-  server: 8.211.175.236
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: u63SxILNwtrQZ7Y1ZrFaZfsA
-  sni: 8.211.175.236
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 07 - xiaohe
-  server: zfapi.zalolink.com
-  port: 43149
-  udp: true
-  type: vless
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: cvong7paE8XIzzbKWgV5iUruP1pBqI2IhMuBHc8c0UE
-    short-id: 15aa0ad4
-  servername: psstatic.cdn.bcebos.com
   client-fingerprint: firefox
 - name: 🇯🇵 日本 (Japan) 08 - xiaohe
-  server: 84.247.155.196
+  server: 167.17.179.175
   port: 443
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-- name: 🇯🇵 日本 (Japan) 09 - xiaohe
-  server: 84.247.155.196
-  port: 80
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-- name: 🇯🇵 日本 (Japan) 10 - xiaohe
-  server: 162.159.135.234
-  port: 2083
-  udp: true
-  type: vmess
-  uuid: ac251237-576f-40c8-a543-554960c958b1
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: cdn.sfacg.uk
+  type: hysteria2
+  password: SW_COSMOS:sYcUMf7G9g67Zuho
+  sni: spacearea.onthewifi.com
   skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /or3
-    headers:
-      Host: or3.sfacg.uk
-- name: 🇯🇵 日本 (Japan) 11 - xiaohe
+- name: 🇯🇵 日本 (Japan) 09 - xiaohe
   server: 43.130.234.128
   port: 443
   udp: true
@@ -119,31 +85,60 @@ proxies:
     public-key: DLYP4CSy4Ey15aYSzcYdwfW4XIuiw3_DuKunNLEDgS4
   servername: www.microsoft.com
   client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 10 - xiaohe
+  server: 43.239.249.178
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 3OAaD9HeUplLnOOA0StMZG
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 11 - xiaohe
+  server: 43.130.234.128
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: Yuike2026cat
+  sni: 43-130-234-128.sslip.io
+  skip-cert-verify: false
 - name: 🇯🇵 日本 (Japan) 12 - xiaohe
-  server: djj.zjlo.top
+  server: 104.21.6.186
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  tls: true
+  servername: jp3.yohototo.top
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 13 - xiaohe
+  server: 168.138.43.75
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: 168.138.43.75
+- name: 🇯🇵 日本 (Japan) 14 - xiaohe
+  server: 155.248.175.201
   port: 23169
   udp: true
   type: vless
-  uuid: f67b1159-a61f-4ae4-9844-0701b716a290
+  uuid: 3eb053cb-d6f8-4b31-8180-222e1cc6f8ff
   flow: xtls-rprx-vision
   tls: true
   servername: djj.zjlo.top
   skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 13 - xiaohe
-  server: 193.123.160.109
-  port: 8443
-  udp: true
-  type: trojan
-  password: F3NzMNuYnG7akU2mSlBY
-  sni: www.microsoft.com
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 14 - xiaohe
-  server: 168.110.21.56
-  port: 18453
-  udp: true
-  type: vless
-  uuid: 1751bebc-1bf1-420c-8b9d-97157aad179b
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select

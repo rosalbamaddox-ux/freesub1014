@@ -4,50 +4,26 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🇸🇬 新加坡 (Singapore) 01 (家宽) - xiaohe",
-      "server": "195.133.135.238",
-      "server_port": 10086,
-      "uuid": "b831381d-6324-4d53-ad4f-8cda48b30811",
-      "security": "auto"
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe",
+      "tag": "🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe",
       "server": "49.254.204.133",
       "server_port": 1774,
       "method": "aes-256-cfb",
       "password": "1234!@#$"
     },
     {
-      "type": "trojan",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe",
-      "server": "112.49.65.212",
-      "server_port": 18000,
-      "password": "3b985d60-e252-4935-8e03-06afeb1144c9",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.biliimg.com",
-        "insecure": true
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇬 新加坡 (Singapore) 01 (家宽) - xiaohe",
-        "🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe",
-        "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe"
+        "🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇬 新加坡 (Singapore) 01 (家宽) - xiaohe",
-        "🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe",
-        "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe"
+        "🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
