@@ -31,7 +31,7 @@
         "server_name": "nl-edge.airlinesvpn.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": ""
         },
         "reality": {
           "enabled": true,

@@ -30,7 +30,7 @@ proxies:
     public-key: mTSn98b4yZG3im3ITn-kNLPbT8ljc9ILvAqiT4jyKXk
     short-id: 0f0e381ec0c4690d
   servername: nl-edge.airlinesvpn.com
-  client-fingerprint: firefox
+  client-fingerprint: ''
 - name: 🇦🇪 阿联酋 (UAE) 04 - xiaohe
   server: 84.235.244.108
   port: 22573
