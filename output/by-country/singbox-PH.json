@@ -5,22 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇬🇷 希腊 (Greece) 01 - xiaohe",
-      "server": "85.90.197.220",
+      "tag": "🇵🇭 菲律宾 (Philippines) 01 - xiaohe",
+      "server": "47.80.76.105",
       "server_port": 443,
-      "uuid": "8f704ed6-9a1a-4d04-94dd-1bff501716de",
+      "uuid": "ecdcc5d3-644a-4606-9e9e-130315da68cd",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
+        "server_name": "www.amazon.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "biNcdU5mywtNw-KyPpLHindBxdEyAolT1WJ26N0b7y4",
-          "short_id": "94acb54627612d43"
+          "public_key": "T7_XLYoPP1_kxIaOov9SovRMk-P1mS-FRhdWueHxaR0",
+          "short_id": "58aa532948cab4a4"
         }
       }
     },
@@ -29,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇬🇷 希腊 (Greece) 01 - xiaohe"
+        "🇵🇭 菲律宾 (Philippines) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇬🇷 希腊 (Greece) 01 - xiaohe"
+        "🇵🇭 菲律宾 (Philippines) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

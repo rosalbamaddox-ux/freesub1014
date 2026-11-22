@@ -6,22 +6,21 @@
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 01 - xiaohe",
-      "server": "185.246.155.91",
-      "server_port": 10103,
-      "uuid": "dbf3f074-3b18-43f3-b82a-debd8c879c69",
-      "flow": "xtls-rprx-vision",
+      "server": "188.225.36.219",
+      "server_port": 443,
+      "uuid": "0b6a7fe0-206b-4071-9f96-cd397d1ec01a",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
+        "server_name": "olvento.space",
+        "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "obQkp5VlQpnlt1hRLQ3VfHISYiiISZJyJZAMaIdjCko",
-          "short_id": "6859f5b59e55aa30"
+          "fingerprint": "firefox"
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "olvento.sync.v1"
       }
     },
     {
