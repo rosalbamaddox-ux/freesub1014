@@ -5,20 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - xiaohe
-  server: 104.21.94.203
+  server: 104.18.32.47
   port: 443
   udp: true
   type: vless
-  uuid: 364D2D52-E61E-4E52-80EC-2BC6BDF15349
+  uuid: 55b3fd10-3658-40a2-8951-ec90932d1d30
   tls: true
-  servername: fr-free.fastestrelay.com
+  servername: sinavm2.soft10.ir
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /700gvl
+    path: /SiNAVM-SiNAVM-SiNAVM-SiNAVM
     headers:
-      Host: fr-free.fastestrelay.com
+      Host: sinavm2.soft10.ir
 proxy-groups:
 - name: PROXIES
   type: select
