@@ -4,77 +4,26 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 01 - xiaohe",
-      "server": "31.58.191.52",
-      "server_port": 3099,
-      "uuid": "cdfc923e-8d34-4b44-ac72-ab41ec560ba8",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "vimeo.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "R6XO56Bp8-HW5dW3oOu5WC-bYVBD9ed8KR_mx6oU6Ew",
-          "short_id": "5701ece7005006b8"
-        }
-      }
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇹🇷 土耳其 (Turkey) 02 - xiaohe",
-      "server": "tr.subscriptionservice.ir",
-      "server_port": 2089,
-      "method": "chacha20-ietf-poly1305",
-      "password": "T199MCnogZBKi0QJdcSgUnoL3U9wl7t1"
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 03 - xiaohe",
-      "server": "172.64.155.209",
-      "server_port": 443,
-      "uuid": "14eccb4f-ca88-4732-b191-d8daacf63448",
-      "tls": {
-        "enabled": true,
-        "server_name": "sinavm3.soft10.ir",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/SiNAVM-SiNAVM-SiNAVM-SiNAVM",
-        "headers": {
-          "Host": "sinavm3.soft10.ir"
-        }
-      }
+      "tag": "🇹🇷 土耳其 (Turkey) 01 - xiaohe",
+      "server": "38.180.104.37",
+      "server_port": 19084,
+      "method": "aes-128-gcm",
+      "password": "ff4d354078394558933d699be149ad69"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 土耳其 (Turkey) 01 - xiaohe",
-        "🇹🇷 土耳其 (Turkey) 02 - xiaohe",
-        "🇹🇷 土耳其 (Turkey) 03 - xiaohe"
+        "🇹🇷 土耳其 (Turkey) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 土耳其 (Turkey) 01 - xiaohe",
-        "🇹🇷 土耳其 (Turkey) 02 - xiaohe",
-        "🇹🇷 土耳其 (Turkey) 03 - xiaohe"
+        "🇹🇷 土耳其 (Turkey) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

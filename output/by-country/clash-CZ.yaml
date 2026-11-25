@@ -35,11 +35,24 @@ proxies:
   port: 8443
   udp: true
   type: vless
-  uuid: 7aa77858-f235-0005-9434-7ab060848b17
+  uuid: 7aa77858-f235-44d6-9434-7ab060848b17
   flow: xtls-rprx-vision
   tls: true
   servername: avelon.onl
   skip-cert-verify: false
+- name: 🇨🇿 捷克 (Czech) 04 - xiaohe
+  server: leviko-nl2962.shopingggg.ir
+  port: 9543
+  udp: true
+  type: vless
+  uuid: 920b3cd9-4f82-4669-bbd2-d4a28b9052c6
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
+    short-id: 123abcdf
+  servername: storage.yandexcloud.net
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -48,6 +61,7 @@ proxy-groups:
   - 🇨🇿 捷克 (Czech) 01 - xiaohe
   - 🇨🇿 捷克 (Czech) 02 - xiaohe
   - 🇨🇿 捷克 (Czech) 03 - xiaohe
+  - 🇨🇿 捷克 (Czech) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -56,5 +70,6 @@ proxy-groups:
   - 🇨🇿 捷克 (Czech) 01 - xiaohe
   - 🇨🇿 捷克 (Czech) 02 - xiaohe
   - 🇨🇿 捷克 (Czech) 03 - xiaohe
+  - 🇨🇿 捷克 (Czech) 04 - xiaohe
 rules:
 - MATCH,PROXIES

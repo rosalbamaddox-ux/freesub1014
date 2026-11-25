@@ -5,13 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - xiaohe
-  server: 65.108.240.210
-  port: 39018
+  server: 157.180.98.124
+  port: 49659
   udp: true
-  type: vmess
-  uuid: 8ca123a8-720b-47c5-bd0c-637431418b09
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: 88a558b1-9645-42f3-89e5-341570d8486d
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: bBVqro8tG6swTNoAkjwUzcu4Ew4N4VcyDHzADcGviCs
+    short-id: 81959fce
+  servername: apple.com
+  client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
   server: 31.76.77.231
   port: 443
@@ -31,20 +36,18 @@ proxies:
   udp: true
   type: hysteria2
   password: 549766c3-fa5f-471e-8031-ffc1f8d5064f
-  sni: lakes.blog-forme.ru
-  skip-cert-verify: false
+  sni: 94.183.164.119
+  skip-cert-verify: true
 - name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
-  server: 157.180.98.124
-  port: 49659
+  server: mail2.besttotaldns.com
+  port: 443
   udp: true
   type: vless
-  uuid: 88a558b1-9645-42f3-89e5-341570d8486d
+  uuid: 08c97940-7646-494c-82f5-7bc19b973281
   flow: xtls-rprx-vision
   tls: true
-  reality-opts:
-    public-key: bBVqro8tG6swTNoAkjwUzcu4Ew4N4VcyDHzADcGviCs
-    short-id: 81959fce
-  servername: apple.com
+  servername: mail2.besttotaldns.com
+  skip-cert-verify: false
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
